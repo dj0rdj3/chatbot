@@ -49,6 +49,14 @@ int wiki(const char *term){
    free(search);
 }
 
+int google(const char *srchterm){
+   char *search = NULL;
+   for(char *p = srchterm; p = strchr(p, ' '); p++) {*p = '+';}
+   asprintf(&search, "https://www.google.com/search?q=%s", srchterm);
+   printf("Link to google search: %s\n", search);
+   free(search);
+}
+
 int main(){
     char *name = NULL, *action = NULL;
     size_t n;
@@ -72,6 +80,9 @@ int main(){
     }
     else if(strcmp(action, "quit") == 0) {
         break;
+    }
+    else if(strncmp(action, "search google for", 17) == 0) {
+        google(action + strlen("search google for "));
     }
     else {
         printf("No such thing.\n");
