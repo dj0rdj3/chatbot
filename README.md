@@ -15,3 +15,10 @@ Chatbot I'm making because I have nothing better to do.
 1. ```nodejs```
 2. ```npm```
 3. ```wikit``` from npm
+
+## How to get it:
+1. ```git clone https://github.com/dj0rdj3/bot```
+2. ```cd bot```
+3. ```make```
+-----
+Run it with ./chatbot
