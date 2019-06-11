@@ -21,4 +21,4 @@ Chat bot I'm making because I have nothing better to do.
 2. ```cd bot```
 3. ```make```
 
-Run it with ./chatbot
+Run with ./chatbot
