@@ -17,8 +17,8 @@ Chat bot I'm making because I have nothing better to do.
 3. ```wikit``` from npm
 
 ## How to get it:
-1. ```git clone https://github.com/dj0rdj3/bot```
-2. ```cd bot```
+1. ```git clone https://github.com/dj0rdj3/chatbot.git```
+2. ```cd chatbot```
 3. ```make```
 
 Run with ```./chatbot```
