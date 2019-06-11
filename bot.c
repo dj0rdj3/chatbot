@@ -49,7 +49,7 @@ int wiki(const char *term){
    free(search);
 }
 
-int google(const char *srchterm){
+int google(char *srchterm){
    char *search = NULL;
    for(char *p = srchterm; p = strchr(p, ' '); p++) {*p = '+';}
    asprintf(&search, "https://www.google.com/search?q=%s", srchterm);
