@@ -1,11 +1,11 @@
-Chatbot I'm making because I have nothing better to do.
+Chat bot I'm making because I have nothing better to do.
 **Works only on Linux**
 
 ## Features:
-1. Google search
-2. Wikipedia search
-3. Calculator
-4. Time and date
+1. Google search - ```search google for <term>```
+2. Wikipedia search - ```search wikipedia for <term>```
+3. Calculator - ```open calculator```
+4. Time and date - ```tell me the time```
 
 ## Planned features:
 1. Text to speech
@@ -17,8 +17,8 @@ Chatbot I'm making because I have nothing better to do.
 3. ```wikit``` from npm
 
 ## How to get it:
-1. ```git clone https://github.com/dj0rdj3/bot```
-2. ```cd bot```
+1. ```git clone https://github.com/dj0rdj3/chatbot.git```
+2. ```cd chatbot```
 3. ```make```
 
-Run it with ./chatbot
+Run with ```./chatbot```
