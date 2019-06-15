@@ -57,6 +57,10 @@ int google(char *srchterm){
    free(search);
 }
 
+int wttr(){
+   system("curl -Ss wttr.in?format='%C,%t' | tr '+' ' '");
+}
+
 int main(){
     char *name = NULL, *action = NULL;
     size_t n;
@@ -83,6 +87,9 @@ int main(){
     }
     else if(strncmp(action, "search google for", 17) == 0) {
         google(action + strlen("search google for "));
+    }
+    else if(strcmp(action, "tell me the weather info") == 0) {
+        wttr();
     }
     else {
         printf("No such thing.\n");
