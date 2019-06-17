@@ -8,6 +8,8 @@ Chat bot I'm making because I have nothing better to do.
 4. Time and date - ```tell me the time```
 5. Weather - ```tell me the weather info```
 
+For help, type ```help```
+
 ## Planned features:
 1. Text to speech
 2. Voice control
