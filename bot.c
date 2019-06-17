@@ -61,6 +61,17 @@ int wttr(){
    system("curl -Ss wttr.in?format='%C,%t' | tr '+' ' '");
 }
 
+int help(){
+   printf("Possible commands:\n");
+   printf("- tell me the time -- tells you the time\n");
+   printf("- tell me the weather info -- tells you the weather info\n");
+   printf("- search wikipedia for <term> -- gives you text from wikipedia about <term>\n");
+   printf("- search google for <term> -- gives you a link to a google search for <term>\n");
+   printf("- open calculator -- opens a simple calculator\n");
+   printf("- quit -- exits the bot\n");
+   printf("- help -- displays this\n");
+}
+
 int main(){
     char *name = NULL, *action = NULL;
     size_t n;
@@ -78,6 +89,9 @@ int main(){
     }
     else if(strcmp(action, "tell me the time") == 0) {
         date();
+    }
+    else if(strcmp(action, "help") == 0) {
+        help();
     }
     else if(strncmp(action, "search wikipedia for", 20) == 0) {
         wiki(action + strlen("search wikipedia for "));
