@@ -1,5 +1,5 @@
 Chat bot I'm making because I have nothing better to do.
-**Works only on Linux**
+**Works only on Linux, tested on *buntu**
 
 ## Features:
 1. Google search - ```search google for <term>```
